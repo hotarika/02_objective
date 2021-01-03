@@ -1,0 +1,273 @@
+/* grid */
+.p-mainWrap {
+	margin: 100px auto;
+	width: 600px;
+}
+.p-head {
+	margin: 5px 0;
+	color: white;
+}
+.p-screenWrap {
+	position: relative;
+}
+.p-gridWrap {
+	display: grid;
+	margin: 0 auto;
+	width: inherit;
+	height: 500px;
+	border: solid 1px black;
+	background-color: rgba(255, 255, 255, 0.8);
+	background-position: top;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	-o-object-fit: contain;
+	object-fit: contain;
+	background-blend-mode: lighten;
+	grid-template: 70% 30% / 40% 60%;
+}
+.p-main.-me {
+	position: relative;
+	/* background: rgb(255, 244, 244); */
+
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+}
+.p-main.-you {
+	position: relative;
+	/* background: rgb(187, 255, 247); */
+
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+}
+.p-desc {
+	padding: 5px;
+	/* background: rgba(139, 187, 255, 0.881); */
+
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 1;
+}
+
+/* common */
+.p-info {
+	position: absolute;
+	padding: 10px 20px;
+	width: 185px;
+	height: 60px;
+	background: rgba(0, 0, 0, 0.6);
+	color: rgb(232, 232, 232);
+}
+.p-circle {
+	position: absolute;
+	z-index: 1;
+	border-radius: 50%;
+}
+.p-infoUpper {
+	display: flex;
+	margin-right: 2px;
+	margin-bottom: 4px;
+	font-weight: bold;
+	font-size: 12px;
+}
+.p-infoName {
+	margin-right: 3px;
+	letter-spacing: 0.5px;
+}
+.p-infoLevel {
+	margin: 0 0 0 auto;
+}
+.p-infoCenter {
+	font-size: 11px;
+}
+.p-infoHpMeter.-max {
+	display: inline-block;
+	width: 120px;
+	height: 10px;
+	border: 1px solid;
+	vertical-align: -2px;
+}
+.p-infoHpMeter.-rest {
+	display: inline-block;
+	height: 100%;
+	background: rgb(111, 255, 214);
+	vertical-align: 2px;
+}
+.p-infoLower {
+	margin-right: 2px;
+	text-align: right;
+	font-size: 11px;
+}
+
+.fa-mars {
+	color: #71adff;
+}
+.fa-venus {
+	color: #f477ef;
+}
+
+/* me */
+.p-info.-me {
+	top: 100px;
+	left: 32px;
+}
+
+.p-img.-me {
+	position: absolute;
+	bottom: 0px;
+	left: 66px;
+	z-index: 2;
+	width: 135px;
+	transform: scale(-1, 1);
+}
+.p-circle.-me {
+	bottom: -43px;
+	left: 41px;
+	width: 154px;
+	height: 80px;
+	border: 1px solid #ff6a82;
+	background: pink;
+}
+
+/* you */
+.p-info.-you {
+	top: 11px;
+	left: 163px;
+	z-index: 3;
+}
+.p-imgWrap {
+	position: absolute;
+	bottom: 69px;
+	left: 31px;
+	z-index: 2;
+	width: 300px;
+	height: 250px;
+	text-align: center;
+}
+
+.p-img.-you {
+	height: 100%;
+}
+.p-circle.-you {
+	bottom: 68px;
+	left: 31px;
+	width: 300px;
+	height: 124px;
+	border: 1px solid rgb(122, 118, 45);
+	background: rgb(166, 161, 75);
+}
+.p-comment {
+	position: absolute;
+	top: 265px;
+	left: 54px;
+	z-index: 2;
+	display: inline-block;
+	padding: 5px;
+	width: 250px;
+	border: 2px solid #5562ff;
+	background: #eafdff;
+	color: #348aff;
+	font-weight: bold;
+	font-size: 15px;
+}
+.p-comment::before {
+	position: absolute;
+	top: -31px;
+	left: 107px;
+	z-index: 3;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-bottom: 15px solid #5562ff;
+	content: "";
+}
+.p-comment::after {
+	position: absolute;
+	top: -26px;
+	left: 109px;
+	z-index: 3;
+	width: 0;
+	height: 0;
+	border: 13px solid transparent;
+	border-bottom: 13px solid #eafdff;
+	content: "";
+}
+
+/* desc */
+.p-descWrap {
+	position: relative;
+	z-index: 2;
+	padding: 11px 20px;
+	width: 100%;
+	height: 100%;
+	background: #838383;
+	color: white;
+	font-size: 14px;
+}
+.p-descArea {
+	overflow-y: scroll;
+	max-width: 300px;
+	height: 117px;
+	line-height: 1.5;
+}
+.p-descArea::-webkit-scrollbar {
+	border: none;
+	background: #838383;
+}
+.p-knockDownNum {
+	position: absolute;
+	top: 15px;
+	right: 26px;
+	font-size: 18px;
+}
+.p-formWrap {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	margin: 15px;
+	padding: 10px 10px;
+	background: #cecece;
+}
+.p-formReverse {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+}
+.p-button {
+	padding-left: 0;
+	border: none;
+	background: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+.p-formHover {
+	color: black;
+	opacity: 0.2;
+}
+.p-button:hover + .p-formHover {
+	opacity: 1;
+}
+.p-button.-init {
+	position: absolute;
+	right: 0px;
+	bottom: -33px;
+	padding: 5px 8px;
+	background: #cecece;
+}
+
+/* gameover */
+.p-gameover {
+	padding: 170px;
+	width: 600px;
+	height: 500px;
+	background: rgb(78, 78, 78);
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+.p-gameover > span {
+	display: inline-block;
+	margin: 13px;
+	font-size: 40px;
+}
