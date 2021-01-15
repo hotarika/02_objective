@@ -1,8 +1,12 @@
 <?php
 
+// 抽象的なクラス
 abstract class AbChar
 {
+   // ***********************
    // property
+   // ***********************
+   // protected =  自クラス及びその派生クラスにおいて参照可能
    protected $name;
    protected $sex;
    protected $maxHp;
@@ -12,7 +16,9 @@ abstract class AbChar
    protected $attackMax;
    protected abstract function attack($str);
 
+   // ***********************
    // constructor
+   // ***********************
    public function __construct($name, $sex, $maxHp, $restHp, $img,  $attackMin, $attackMax)
    {
       $this->name = $name;
@@ -24,14 +30,16 @@ abstract class AbChar
       $this->attackMax = $attackMax;
    }
 
+   // ***********************
    // method
-   //// name
+   // ***********************
+   // name
    public function getName()
    {
       return $this->name;
    }
 
-   //// sex
+   // sex
    public function getSexIcon()
    {
       if ($this->sex == Sex::MAN) {
@@ -43,7 +51,7 @@ abstract class AbChar
       }
    }
 
-   //// hp
+   // hp
    public function getMaxHp()
    {
       return $this->maxHp;
@@ -58,7 +66,7 @@ abstract class AbChar
       return $this->restHp;
    }
 
-   //// img
+   // img
    public function getImg()
    {
       return $this->img;
