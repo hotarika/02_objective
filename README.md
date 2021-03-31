@@ -8,8 +8,8 @@
 
 [事前に AdobeXD でプロトタイプを作成（表示はこのリンクから）](https://user-images.githubusercontent.com/61940526/108485237-0e1db200-72e0-11eb-8309-6c325215472c.png)
 
-<img src="https://created-portfolio.com/detail/images/objective-1.34e94777747007ba3b3046ca517f898d.png" width="400px" >
-<img src="https://created-portfolio.com/detail/images/objective-2.0e298fbd331c71507c7b77001cc2c5e1.png" width="400px">
+<img src="https://user-images.githubusercontent.com/61940526/113123771-d47d8680-924f-11eb-81e6-1e66d404a7fe.jpg" width="400px">
+<img src="https://user-images.githubusercontent.com/61940526/113123783-d8110d80-924f-11eb-8f37-0492300851a0.jpg" width="400px">
 
 ## 遊び方
 
